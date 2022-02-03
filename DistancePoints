@@ -1,0 +1,19 @@
+package nick.pack;
+
+
+public class Main {
+    public static void main(String[] args) {
+        int x1 = 2;
+        int y1 = -5;
+        int x2 = -4;
+        int y2 = 3;
+        System.out.println(Distance.getDistance(x1,y1,x2,y2));
+    }
+    public static class Distance{
+        public static double getDistance(int x1, int y1, int x2, int y2){
+            double res = Math.sqrt((x1 * x1 - 2*x1*x2 + x2*x2)+(y1*y1 - 2*y1*y2 + y2*y2));
+            return res;
+        }
+    }
+}
+
